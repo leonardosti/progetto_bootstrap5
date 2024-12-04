@@ -1,0 +1,59 @@
+.nav-link {
+    position: relative;
+    display: inline-block;
+    color: #343a40;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #4d637a;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #566677;
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.banner {
+    background: url('img/welcome-banner.png') no-repeat center center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.banner h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.banner p {
+    font-size: 1.5rem;
+    margin: 10px 0 0;
+}
+
+/* Footer icons hover */
+footer a {
+    transition: transform 0.2s, color 0.3s;
+}
+
+footer a:hover {
+    transform: scale(1.2);
+    color: #637c96 !important;
+}
