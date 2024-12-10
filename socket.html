@@ -32,46 +32,46 @@
     <br>
     <div class="container mt-5">
         <section>
-            <h2 class="text-secondary mt-4 mb-2">Cos'è una socket?</h2>
-            <p class="text-justify mb-3">Una <strong>socket</strong> è un'interfaccia software che consente a due
+            <h2 class="text-secondary mt-4 mb-2" id="socket-title">Cos'è una socket?</h2>
+            <p class="text-justify mb-3" id="socket-description">Una <strong>socket</strong> è un'interfaccia software che consente a due
                 programmi (locali o remoti) di comunicare tra loro attraverso una rete. Funziona come un punto di
                 connessione per scambiare dati tra un client e un server.</p>
             <ul class="list-group mb-3">
-                <li class="list-group-item"><strong>Indirizzo IP:</strong> Identifica un dispositivo specifico in rete.
+                <li class="list-group-item" id="socket-item-1"><strong>Indirizzo IP:</strong> Identifica un dispositivo specifico in rete.
                 </li>
-                <li class="list-group-item"><strong>Porta:</strong> Un numero che rappresenta un'applicazione o un
+                <li class="list-group-item" id="socket-item-2"><strong>Porta:</strong> Un numero che rappresenta un'applicazione o un
                     servizio specifico sul dispositivo.</li>
             </ul>
-            <p class="text-justify mb-3">Le socket si trovano in vari protocolli di rete, ma il più comune è il
+            <p class="text-justify mb-3" id="socket-outro">Le socket si trovano in vari protocolli di rete, ma il più comune è il
                 protocollo TCP/IP.</p>
         </section>
         <hr />
         <section>
-            <h2 class="text-secondary mt-4 mb-2">Tipologie di socket</h2>
+            <h2 class="text-secondary mt-4 mb-2" id="type-title">Tipologie di socket</h2>
             <ol class="list-group mb-3">
                 <li class="list-group-item">
-                    <p class="text-justify mb-3"><strong>Socket Stream (TCP)</strong></p>
+                    <p class="text-justify mb-3" id="socket-tcp-title"><strong>Socket Stream (TCP)</strong></p>
                     <ul class="list-group mb-3">
-                        <li class="list-group-item list-group-item">Basate sul protocollo <strong>TCP</strong>
+                        <li class="list-group-item list-group-item" id="socket-tcp-item-1">Basate sul protocollo <strong>TCP</strong>
                             (Transmission Control Protocol).</li>
-                        <li class="list-group-item list-group-item">Garantisce una comunicazione
+                        <li class="list-group-item list-group-item" id="socket-tcp-item-2">Garantisce una comunicazione
                             <strong>affidabile</strong> e orientata alla connessione.</li>
-                        <li class="list-group-item list-group-item">I dati vengono trasmessi in modo sequenziale, come
+                        <li class="list-group-item list-group-item" id="socket-tcp-item-3">I dati vengono trasmessi in modo sequenziale, come
                             un flusso continuo.</li>
-                        <li class="list-group-item list-group-item">Utilizzo: Adatto per applicazioni che richiedono
+                        <li class="list-group-item list-group-item" id="socket-tcp-item-4">Utilizzo: Adatto per applicazioni che richiedono
                             integrità dei dati, come il web browsing, l'email, e il trasferimento di file.</li>
                     </ul>
                 </li>
                 <li class="list-group-item">
-                    <p class="text-justify mb-3"><strong>Socket Datagram (UDP)</strong></p>
+                    <p class="text-justify mb-3" id="socket-udp-title"><strong>Socket Datagram (UDP)</strong></p>
                     <ul class="list-group mb-3">
-                        <li class="list-group-item list-group-item">Basate sul protocollo <strong>UDP</strong> (User
+                        <li class="list-group-item list-group-item" id="socket-udp-item-1">Basate sul protocollo <strong>UDP</strong> (User
                             Datagram Protocol).</li>
-                        <li class="list-group-item list-group-item">Offrono una comunicazione <strong>non
+                        <li class="list-group-item list-group-item" id="socket-udp-item-2">Offrono una comunicazione <strong>non
                                 affidabile</strong> e senza connessione.</li>
-                        <li class="list-group-item list-group-item">I dati vengono trasmessi in pacchetti (datagrammi)
+                        <li class="list-group-item list-group-item" id="socket-udp-item-3">I dati vengono trasmessi in pacchetti (datagrammi)
                             senza garanzia di ordine o consegna.</li>
-                        <li class="list-group-item list-group-item">Utilizzo: Adatto per applicazioni che richiedono
+                        <li class="list-group-item list-group-item" id="socket-udp-item-4">Utilizzo: Adatto per applicazioni che richiedono
                             velocità rispetto all'affidabilità, come streaming video, giochi online e DNS.</li>
                     </ul>
                 </li>
@@ -79,27 +79,27 @@
         </section>
         <hr />
         <section>
-            <h2 class="text-secondary mt-4 mb-2" id="ClientServer">Processo di comunicazione (Client - Server)</h2>
-            <h4 class="text-secondary mt-4 mb-2">1. <strong>Server</strong></h4>
+            <h2 class="text-secondary mt-4 mb-2" id="cs-communication-title">Processo di comunicazione (Client - Server)</h2>
+            <h4 class="text-secondary mt-4 mb-2" id="server-title">1. <strong>Server</strong></h4>
             <ul class="list-group mb-3">
-                <li class="list-group-item"><strong>Creazione della socket:</strong> Viene creata una socket per
+                <li class="list-group-item" id="server-item-1"><strong>Creazione della socket:</strong> Viene creata una socket per
                     ascoltare le richieste dei client.</li>
-                <li class="list-group-item"><strong>Binding:</strong> La socket viene associata a un indirizzo IP e a
+                <li class="list-group-item" id="server-item-2"><strong>Binding:</strong> La socket viene associata a un indirizzo IP e a
                     una porta specifica.</li>
-                <li class="list-group-item"><strong>Ascolto:</strong> La socket entra in uno stato di ascolto per
+                <li class="list-group-item" id="server-item-3"><strong>Ascolto:</strong> La socket entra in uno stato di ascolto per
                     attendere richieste.</li>
-                <li class="list-group-item"><strong>Accettazione:</strong> Quando un client richiede una connessione, il
+                <li class="list-group-item" id="server-item-4"><strong>Accettazione:</strong> Quando un client richiede una connessione, il
                     server accetta e stabilisce un canale dedicato.</li>
             </ul>
-            <h4 class="text-secondary mt-4 mb-2">2. <strong>Client</strong></h4>
+            <h4 class="text-secondary mt-4 mb-2" id="client-title">2. <strong>Client</strong></h4>
             <ul class="list-group mb-3">
-                <li class="list-group-item"><strong>Creazione della socket:</strong> Viene creata una socket per
+                <li class="list-group-item" id="client-item-1"><strong>Creazione della socket:</strong> Viene creata una socket per
                     connettersi al server.</li>
-                <li class="list-group-item"><strong>Connessione:</strong> Il client si collega all'indirizzo IP e alla
+                <li class="list-group-item" id="client-item-2"><strong>Connessione:</strong> Il client si collega all'indirizzo IP e alla
                     porta del server.</li>
-                <li class="list-group-item"><strong>Scambio dati:</strong> Dopo che la connessione è stabilita, client e
+                <li class="list-group-item" id="client-item-3"><strong>Scambio dati:</strong> Dopo che la connessione è stabilita, client e
                     server possono inviare e ricevere dati.</li>
-                <li class="list-group-item"><strong>Chiusura:</strong> Una volta completato lo scambio, la connessione
+                <li class="list-group-item" id="client-item-4"><strong>Chiusura:</strong> Una volta completato lo scambio, la connessione
                     viene chiusa.</li>
             </ul>
         </section>

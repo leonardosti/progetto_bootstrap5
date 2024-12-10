@@ -1,16 +1,27 @@
 {
-    "intro": "Le <strong>socket</strong> appartengono al mondo della <strong>comunicazione di rete</strong> e rappresentano uno dei mattoni fondamentali per costruire applicazioni distribuite, ovvero sistemi in cui componenti situati su macchine diverse collaborano tra loro.",
-    "role-title": "Importanza delle Socket nel Networking",
-    "role-description": "Le socket si collocano al <strong>livello di trasporto</strong> del modello OSI, fungendo da punto di accesso per protocolli come <strong>TCP</strong> e <strong>UDP</strong>. Tuttavia, non sono vincolate esclusivamente al livello OSI: rappresentano un'interfaccia tra le applicazioni (livello superiore) e il livello di rete (inferiore). Questo le rende essenziali per sviluppare applicazioni di rete, come browser web, client di posta elettronica, o sistemi di chat.",
-    "bridge-title": "Collegamento tra fisico e digitale",
-    "bridge-description": "Le socket permettono ai programmi di 'ragionare' in termini di canali di comunicazione piuttosto che in termini di hardware. Ad esempio:",
-    "bridge-item-1": "Non è necessario preoccuparsi di come i segnali viaggiano fisicamente attraverso cavi o onde radio.",
-    "bridge-item-2": "I programmatori possono concentrarsi sui flussi di dati, sfruttando meccanismi di alto livello per trasmettere e ricevere informazioni.",
-    "usage-title": "Dove si utilizzano le Socket",
-    "usage-description": "Le socket trovano applicazione in:",
-    "usage-item-1": "<strong>Applicazioni web:</strong> Come HTTP (HyperText Transfer Protocol) e HTTPS per la trasmissione sicura dei dati.",
-    "usage-item-2": "<strong>Sistemi di messaggistica:</strong> Per chat in tempo reale e piattaforme di collaborazione.",
-    "usage-item-3": "<strong>Streaming multimediale:</strong> Dove le performance rapide (UDP) o l'affidabilità (TCP) sono cruciali.",
-    "usage-item-4": "<strong>Giochi online:</strong> Per sincronizzare giocatori in ambienti virtuali.",
-    "outro": "Le socket non sono solo strumenti tecnici: rappresentano il linguaggio universale della rete, traducendo la complessità della comunicazione distribuita in un'interfaccia intuitiva per sviluppatori."
+    "index": {
+        "intro": "Le <strong>socket</strong> appartengono al mondo della <strong>comunicazione di rete</strong> e rappresentano uno dei mattoni fondamentali per costruire applicazioni distribuite, ovvero sistemi in cui componenti situati su macchine diverse collaborano tra loro.",
+        "role-title": "Importanza delle Socket nel Networking",
+        "role-description": "Le socket si collocano al <strong>livello di trasporto</strong> del modello OSI, fungendo da punto di accesso per protocolli come <strong>TCP</strong> e <strong>UDP</strong>. Tuttavia, non sono vincolate esclusivamente al livello OSI: rappresentano un'interfaccia tra le applicazioni (livello superiore) e il livello di rete (inferiore). Questo le rende essenziali per sviluppare applicazioni di rete, come browser web, client di posta elettronica, o sistemi di chat.",
+        "bridge-title": "Collegamento tra fisico e digitale",
+        "bridge-description": "Le socket permettono ai programmi di 'ragionare' in termini di canali di comunicazione piuttosto che in termini di hardware. Ad esempio:",
+        "bridge-item-1": "Non è necessario preoccuparsi di come i segnali viaggiano fisicamente attraverso cavi o onde radio.",
+        "bridge-item-2": "I programmatori possono concentrarsi sui flussi di dati, sfruttando meccanismi di alto livello per trasmettere e ricevere informazioni.",
+        "usage-title": "Dove si utilizzano le Socket",
+        "usage-description": "Le socket trovano applicazione in:",
+        "usage-item-1": "<strong>Applicazioni web:</strong> Come HTTP (HyperText Transfer Protocol) e HTTPS per la trasmissione sicura dei dati.",
+        "usage-item-2": "<strong>Sistemi di messaggistica:</strong> Per chat in tempo reale e piattaforme di collaborazione.",
+        "usage-item-3": "<strong>Streaming multimediale:</strong> Dove le performance rapide (UDP) o l'affidabilità (TCP) sono cruciali.",
+        "usage-item-4": "<strong>Giochi online:</strong> Per sincronizzare giocatori in ambienti virtuali.",
+        "outro": "Le socket non sono solo strumenti tecnici: rappresentano il linguaggio universale della rete, traducendo la complessità della comunicazione distribuita in un'interfaccia intuitiva per sviluppatori."
+    },
+    "glossario": {
+        "glossary-title": "",
+        "glossary-socket": "",
+        "glossary-tcp": "",
+        "glossary-udp": "",
+        "glossary-iso-osi": "",
+        "glossary-transport": "",
+        "glossary-cs-communication": ""
+    }
 }
