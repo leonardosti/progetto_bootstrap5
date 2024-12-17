@@ -1,130 +1,71 @@
 <!DOCTYPE html>
 <html lang="it">
-
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glossario - Socket Web</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet">
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-
-  <body>
-    <!-- Navbar -->
-    <nav
-      class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow-sm">
-      <div class="container-fluid">
-        <a class="title navbar-brand" href="index.html">Socket Web</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link"
-                href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link"
-                href="socket.html">Socket</a></li>
-            <li class="nav-item"><a class="nav-link" href="osi.html">Modello
-                OSI</a></li>
-            <li class="nav-item"><a class="nav-link" href="tcp-udp.html">TCP vs
-                UDP</a></li>
-            <li class="nav-item"><a class="nav-link"
-                href="glossario.html">Glossario</a></li>
-          </ul>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glossario - Socket Web</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container-fluid">
+      <a class="title navbar-brand" href="index.html">Socket Web</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="socket.html">Socket</a></li>
+          <li class="nav-item"><a class="nav-link" href="osi.html">Modello OSI</a></li>
+          <li class="nav-item"><a class="nav-link" href="tcp-udp.html">TCP vs UDP</a></li>
+          <li class="nav-item"><a class="nav-link" href="glossario.html">Glossario</a></li>
+        </ul>
       </div>
-    </nav>
-    <br>
-    <div class="container mt-5">
-      <h1 class="title mt-4 mb-2">Glossario</h1>
-      <p class="text-justify mb-3" id="glossary-title">Glossario delle pagine
-        contenute nel
-        sito:</p>
-      <ul class="list-group mb-3">
-        <li class="list-group-item" id="glossary-socket"><strong>Socket:
-          </strong>
-          <p class="text-justify mb-3">Una <strong>socket</strong> è
-            un'interfaccia software che consente a due
-            programmi (locali o remoti) di comunicare tra loro attraverso una
-            rete. Funziona come un punto di
-            connessione per scambiare dati tra un client e un server.</p><a
-            class="nav-link" href="socket.html"> Scopri di più</a>
-        </li>
-        <li class="list-group-item" id="glossary-tcp"><strong>TCP: </strong>
-          <p class="text-justify mb-3">
-            Il <strong>TCP (Transmission Control Protocol)</strong> è un
-            protocollo di comunicazione orientato alla
-            connessione che garantisce
-            la consegna dei dati in ordine corretto e senza errori, ma con un
-            overhead maggiore rispetto a UDP.</p>
-          <a class="nav-link" href="tcp-udp.html"> Scopri di più</a>
-        </li>
-        <li class="list-group-item" id="glossary-udp"><strong>UDP: </strong>
-          <p class="text-justify mb-3">
-            Il <strong>UDP (User Datagram Protocol)</strong> è un protocollo di
-            comunicazione senza connessione che invia
-            pacchetti di dati
-            (datagrammi) senza garantire la loro consegna o ordine, risultando
-            più veloce ma meno affidabile.</p><a
-            class="nav-link" href="tcp-udp.html"> Scopri di più</a>
-        </li>
-        <li class="list-group-item" id="glossary-iso-osi"><strong>Pila ISO-OSI:
-          </strong>
-          <p class="text-justify mb-3">Il <strong>modello OSI</strong> è uno
-            standard teorico che descrive come i dati
-            vengono trasmessi e ricevuti
-            attraverso una rete.</p><a class="nav-link" href="osi.html"> Scopri
-            di più</a>
-        </li>
-        <li class="list-group-item" id="glossary-transport"><strong>Livello di
-            trasporto (Transport
-            Layer): </strong>
-          <p class="text-justify mb-3">Il <strong>livello di trasporto</strong>
-            nella pila
-            ISO/OSI garantisce la comunicazione end-to-end tra host, gestendo il
-            controllo del flusso, l'affidabilità, e la segmentazione dei
-            dati.</p><a class="nav-link" href="osi.html#transportLayer"> Scopri
-            di più</a>
-        </li>
-        <li class="list-group-item"
-          id="glossary-cs-communication"><strong>Comunicazione Client-
-            Server</strong>
-          <p class="text-justify mb-3">La <strong>comunicazione
-              client-server</strong> è
-            un'interazione in cui il client invia richieste al server, il quale
-            elabora e restituisce risposte, solitamente tramite protocolli come
-            HTTP o TCP/IP.</p><a class="nav-link"
-            href="socket.html#cs-communication-title"> Scopri di
-            più</a>
-        </li>
-      </ul>
     </div>
-    <br>
-    <br>
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-      <p class="text-justify mb-3">Leonardo Osti - Classe 5F</p>
-
-      <div class="mt-2">
-        <a class="text-white me-2" href="https://www.facebook.com"><i
-            class="fab fa-facebook"></i></a>
-        <a class="text-white me-2" href="https://www.twitter.com"><i
-            class="fab fa-twitter"></i></a>
-        <a class="text-white" href="https://www.instagram.com"><i
-            class="fab fa-instagram"></i></a>
-      </div>
-    </footer>
-    <script src="script.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
-
+  </nav>
+  <br>
+  <!-- Content-->
+  <div class="container mt-5">
+    <h1 class="title mt-4 mb-2">Glossario</h1>
+    <p class="text-justify mb-3" id="glossary-title">Glossario delle pagine contenute nel sito:</p>
+    <ul class="list-group mb-3">
+      <li class="list-group-item" id="glossary-socket"><strong>Socket: </strong>
+        <p class="text-justify mb-3">Una <strong>socket</strong> è un'interfaccia software che consente a due programmi (locali o remoti) di comunicare tra loro attraverso una rete. Funziona come un punto di connessione per scambiare dati tra un client e un server.</p><a class="nav-link" href="socket.html"> Scopri di più</a>
+      </li>
+      <li class="list-group-item" id="glossary-tcp"><strong>TCP: </strong>
+        <p class="text-justify mb-3"> Il <strong>TCP (Transmission Control Protocol)</strong> è un protocollo di comunicazione orientato alla connessione che garantisce la consegna dei dati in ordine corretto e senza errori, ma con un overhead maggiore rispetto a UDP.</p>
+        <a class="nav-link" href="tcp-udp.html"> Scopri di più</a>
+      </li>
+      <li class="list-group-item" id="glossary-udp"><strong>UDP: </strong>
+        <p class="text-justify mb-3"> Il <strong>UDP (User Datagram Protocol)</strong> è un protocollo di comunicazione senza connessione che invia pacchetti di dati (datagrammi) senza garantire la loro consegna o ordine, risultando più veloce ma meno affidabile.</p><a class="nav-link" href="tcp-udp.html"> Scopri di più</a>
+      </li>
+      <li class="list-group-item" id="glossary-iso-osi"><strong>Pila ISO-OSI: </strong>
+        <p class="text-justify mb-3">Il <strong>modello OSI</strong> è uno standard teorico che descrive come i dati vengono trasmessi e ricevuti attraverso una rete.</p><a class="nav-link" href="osi.html"> Scopri di più</a>
+      </li>
+      <li class="list-group-item" id="glossary-transport"><strong>Livello di trasporto (Transport Layer): </strong>
+        <p class="text-justify mb-3">Il <strong>livello di trasporto</strong> nella pila ISO/OSI garantisce la comunicazione end-to-end tra host, gestendo il controllo del flusso, l'affidabilità, e la segmentazione dei dati.</p><a class="nav-link" href="osi.html#transportLayer"> Scopri di più</a>
+      </li>
+      <li class="list-group-item" id="glossary-cs-communication"><strong>Comunicazione Client- Server</strong>
+        <p class="text-justify mb-3">La <strong>comunicazione client-server</strong> è un'interazione in cui il client invia richieste al server, il quale elabora e restituisce risposte, solitamente tramite protocolli come HTTP o TCP/IP.</p><a class="nav-link" href="socket.html#cs-communication-title"> Scopri di più</a>
+      </li>
+    </ul>
+  </div>
+  <br>
+  <br>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+  <p class="text-justify mb-3">Leonardo Osti - Classe 5F</p>
+  <div class="mt-2">
+      <a class="text-white" href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+      <a class="text-white" href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+      <a class="text-white" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+  </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
