@@ -5,7 +5,7 @@ body {
 
 .navbar {
     background-color: #1c1c1c;
-    border-bottom: 2px solid #8e44ad;
+    border-bottom: 2px solid #4b0082;
 }
 .navbar button span{
     color: white;
@@ -15,27 +15,11 @@ body {
     display: inline-block;
     color: #dcdcdc;
     text-decoration: none;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out; 
 }
 
 .navbar a:hover {
     color: #9b59b6;
-}
-
-.nav-link::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #9b59b6;
-    transition: width 0.3s ease-in-out;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-.nav-link:hover::after {
-    width: 100%;
 }
 
 .banner {
@@ -54,10 +38,36 @@ body {
     font-weight: bold;
     margin: 0;
 }
+@media (max-width: 576px){
+    .banner h1{
+        font-size: 3rem;
+    }
+    header h1{
+        font-size: 3rem !important;
+    }
+    header p{
+        font-size: 1.1rem !important;
+    }
+}
+
+header{
+    background: linear-gradient(270deg, #4b0082, #000);
+}
+
+header h1{
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 2.5rem;
+}
+
+
+header p{
+    font-size: 1.5rem;
+}
 
 .title,
 strong {
-    color: purple;
+    color: rgb(80, 0, 120);
 }
 
 .card {
@@ -69,7 +79,6 @@ strong {
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
 }
 
 .card-title {
@@ -80,6 +89,16 @@ strong {
 .container {
     max-width: 1200px;
 }
+.glossarylink{
+    text-decoration: none;
+    transition: color 0.1s ease-in-out; 
+}
+
+.glossarylink:hover{
+    color: #9b59b6;
+}
+
+footer, header{background-color: #1c1c1c}
 
 .fab {
     font-style: normal;

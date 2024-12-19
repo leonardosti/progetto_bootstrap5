@@ -19,11 +19,11 @@ const getPageIndex = () => {
 
 
 fetch('index.json')
-    .then(respose => {
-        if (!respose.ok) {
+    .then(response => {
+        if (!response.ok) {
             throw new Error('Errore nel caricamento del file json');
         }
-        return respose.json();
+        return response.json();
     })
 
     .then(data => {
